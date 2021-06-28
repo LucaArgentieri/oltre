@@ -6,6 +6,7 @@
   <VideoBlock />
   <ProductBlock />
   <Reviews />
+  <Footer />
 </template>
 
 <script>
@@ -16,6 +17,7 @@ import ImagesGroup from "../components/ImagesGroup.vue";
 import VideoBlock from "../components/VideoBlock.vue";
 import ProductBlock from "../components/ProductBlock.vue";
 import Reviews from "../components/Reviews.vue";
+import Footer from "../components/Foooter.vue";
 
 export default {
   name: "Home",
@@ -27,6 +29,7 @@ export default {
     VideoBlock,
     ProductBlock,
     Reviews,
+    Footer,
   },
 };
 </script>

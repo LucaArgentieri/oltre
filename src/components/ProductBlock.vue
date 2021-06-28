@@ -36,4 +36,12 @@ export default {};
     }
   }
 }
+@media (max-width: 900px) {
+  .productblock {
+    flex-direction: column;
+    div {
+      width: 100%;
+    }
+  }
+}
 </style>

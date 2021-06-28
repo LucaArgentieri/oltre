@@ -29,4 +29,14 @@ export default {};
     }
   }
 }
+
+@media (max-width: 900px) {
+  .maintext {
+    flex-direction: column;
+
+    div {
+      width: 100%;
+    }
+  }
+}
 </style>

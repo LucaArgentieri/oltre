@@ -2,7 +2,7 @@
   <div class="reviews flex center column">
     <h1>Recensioni</h1>
     <div class="flex spaceEvenly">
-      <div class="flex center column">
+      <div class="reviews_single flex center column">
         <p>Image</p>
         <p>Nome e cognome</p>
         <p>Età</p>
@@ -12,7 +12,7 @@
           nobis?
         </p>
       </div>
-      <div class="flex center column">
+      <div class="reviews_single flex center column">
         <p>Image</p>
         <p>Nome e cognome</p>
         <p>Età</p>
@@ -22,7 +22,7 @@
           nobis?
         </p>
       </div>
-      <div class="flex center column">
+      <div class="reviews_single flex center column">
         <p>Image</p>
         <p>Nome e cognome</p>
         <p>Età</p>
@@ -43,5 +43,26 @@ export default {};
 <style lang="scss">
 .reviews {
   height: 100vh;
+
+  h1 {
+    padding-bottom: 120px;
+  }
+
+  &_single {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    p {
+      padding-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .reviews {
+    &_single {
+      display: none;
+    }
+  }
 }
 </style>

@@ -39,5 +39,11 @@ nav {
     }
   }
 }
+
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+}
 </style>
 
