@@ -2,12 +2,24 @@
   <router-view />
 </template>
 
+
+
 <style lang="scss">
 //Reset
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 }
 
 a {
@@ -66,6 +78,10 @@ $colors: (
 .upcase,
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .lato {
