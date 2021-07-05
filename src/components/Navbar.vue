@@ -1,36 +1,40 @@
 <template>
   <nav>
     <div class="nav_1">
-      <router-link to="/" class="upcase">home</router-link>
-      <router-link to="/" class="upcase">shop</router-link>
+      <router-link to="/" class="upcase lato light">home</router-link>
+      <router-link to="/shop" class="upcase lato light">shop</router-link>
     </div>
     <div>
       <router-link to="/">(oltre)</router-link>
     </div>
-    <div class="upcase flex center">codice sconto</div>
+    <div class="upcase flex center">
+      <Button name="Codice Sconto" link="codicesconto" />
+    </div>
   </nav>
 </template>
 
 <script>
-export default {};
+import Button from "../components/Button.vue";
+export default {
+  components: {
+    Button,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  background-color: #ccb3ff;
+  width: 100%;
+  border-bottom: 1px solid black;
 
   div {
     padding-left: 60px;
     padding-right: 60px;
-  }
-
-  div:nth-child(3) {
-    background-color: #fff273;
-    height: 100%;
   }
 
   .nav_1 {
