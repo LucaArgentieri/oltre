@@ -5,7 +5,7 @@
       <router-link to="/shop" class="upcase lato light">shop</router-link>
     </div>
     <div>
-      <router-link to="/">(oltre)</router-link>
+      <router-link class="grandslang h2" to="/">(oltre)</router-link>
     </div>
     <div class="upcase flex center">
       <Button name="Codice Sconto" link="codicesconto" />

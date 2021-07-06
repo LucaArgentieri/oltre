@@ -75,6 +75,19 @@ $colors: (
 }
 
 //Fonts
+
+@font-face {
+  font-family: "Grandslang";
+  src: url("./assets/fonts/GRANDSLANG-ROMAN.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Grandslang-Italic";
+  src: url("./assets/fonts/GRANDSLANG-ITALIC.woff2") format("woff2");
+  font-display: swap;
+}
+
 .upcase,
 .uppercase {
   text-transform: uppercase;
@@ -82,6 +95,14 @@ $colors: (
 
 .text-center {
   text-align: center;
+}
+
+.grandslang {
+  font-family: "Grandslang";
+}
+
+.grandslang-italic {
+  font-family: "Grandslang-Italic";
 }
 
 .lato {

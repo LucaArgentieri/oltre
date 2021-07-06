@@ -20,7 +20,7 @@
           alt="Loading..."
         />
         <div class="reviews">
-          <p class="title h1 c-black">Recensioni</p>
+          <p class="title h1 c-black grandslang">Recensioni</p>
 
           <div class="single" v-for="item in reviews" :key="item.id">
             <div class="flex">
@@ -44,7 +44,7 @@
     </div>
     <div class="desc">
       <div class="info">
-        <p class="title">(oltre) - Intimità condivisa</p>
+        <p class="title grandslang h1">(oltre) - Intimità condivisa</p>
         <p class="lato light h5 c-black">
           Oltre è un gioco innovativo che ha il fine di permettere alle donne di
           essere loro stesse e condividere i loro pensieri ed esperienze
@@ -65,10 +65,23 @@
           <div>Sorprese all'interno</div>
         </div>
 
-        <Button name="acquista ora" />
+        <Button name="acquista ora" link="purchase" />
 
         <div class="accordion">
-          <p class="details lato h5 light" @click="changeShow">Dettagli</p>
+          <p class="details lato h5 light" @click="changeShow">
+            Dettagli
+            <svg
+              class="details-svg"
+              width="16"
+              height="9"
+              viewBox="0 0 16 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1 1L8 8L15 1" stroke="black" stroke-width="0.7" />
+            </svg>
+          </p>
+
           <div class="accordion_content">
             <p class="lato h5 light">
               Oltre è un gioco innovativo che ha il fine di permettere alle

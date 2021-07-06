@@ -15,19 +15,6 @@ export function scrollTo(index) {
   });
 }
 
-export function animateAccordionButton() {
-  gsap.fromTo(
-    ".accordion_button",
-    {
-      opacity: 0,
-    },
-    {
-      opacity: 1,
-      duration: 1.5,
-    }
-  );
-}
-
 export function setAccordionContent() {
   gsap.to(".accordion_content", {
     autoAlpha: 0,
@@ -37,19 +24,25 @@ export function setAccordionContent() {
 }
 
 export function animateAccordion() {
-  animateAccordionButton();
+  tl.to(".details-svg", {
+    duration: 0.3,
+    rotateX: 180,
+  });
   tl.to(".accordion_content", {
     autoAlpha: 1,
     height: "auto",
-    duration: 0,
+    duration: 0.3,
   });
 }
 
 export function reverseAccordion() {
-  animateAccordionButton();
+  tl.to(".details-svg", {
+    duration: 0.3,
+    rotateX: 0,
+  });
   tl.to(".accordion_content", {
     autoAlpha: 0,
     height: "auto",
-    duration: 0,
+    duration: 0.3,
   });
 }

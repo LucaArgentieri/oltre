@@ -3,7 +3,7 @@
     <div class="flex center">Image</div>
 
     <div class="flex column">
-      <h1>(oltre) - Il gioco</h1>
+      <p class="grandslang h1">(oltre) - Il gioco</p>
       <p class="desc lato light italic h5 c-black">
         (oltre) - Intimità Condivisa <br />
         Gioco da tavolo + Sex Toy
@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .productblock {
   height: 100vh;
 
