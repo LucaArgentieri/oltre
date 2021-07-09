@@ -175,4 +175,9 @@ h6 {
     font-size: 20px;
   }
 }
+
+//Scrollbar
+::-webkit-scrollbar {
+  width: 0px;
+}
 </style>
