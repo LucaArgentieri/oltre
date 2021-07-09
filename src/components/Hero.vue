@@ -1,10 +1,13 @@
 <template>
   <div class="hero flex center column">
-    <p class="grandslang h1">Intimità condivisa</p>
-    <p class="lato light h4">
-      Un gioco pensato per le donne, da giocare in compagnia delle amiche <br />
-      dove l’unica vera regola è non aver paura di raccontarsi.
-    </p>
+    <div class="text">
+      <p class="grandslang h1">Intimità condivisa</p>
+      <p class="lato light h4">
+        Un gioco pensato per le donne, da giocare in compagnia delle amiche
+        <br />
+        dove l’unica vera regola è non aver paura di raccontarsi.
+      </p>
+    </div>
     <Button name="acquista ora" link="shop" />
 
     <div class="black_div"></div>
@@ -13,9 +16,13 @@
 
 <script>
 import Button from "../components/Button.vue";
+import { animateText } from "../animations/animations";
 export default {
   components: {
     Button,
+  },
+  mounted: function () {
+    animateText();
   },
 };
 </script>

@@ -46,3 +46,30 @@ export function reverseAccordion() {
     duration: 0.3,
   });
 }
+
+export function animateText() {
+  gsap.set(".hero .text", { perspective: 400 });
+  gsap.from(
+    [".hero .text .h1"],
+    {
+      duration: 0.75,
+      opacity: 0,
+      y: 100,
+      stagger: 0.01,
+    },
+    "+=0"
+  );
+  gsap.from(
+    [".hero .text .h4"],
+    {
+      duration: 0.75,
+      opacity: 0,
+      y: 100,
+      stagger: 0.01,
+      onComplete: () => {
+        gsap.to();
+      },
+    },
+    "+=0"
+  );
+}
