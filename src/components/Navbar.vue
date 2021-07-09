@@ -15,9 +15,13 @@
 
 <script>
 import Button from "../components/Button.vue";
+import { animateNavbar } from "../animations/animations";
 export default {
   components: {
     Button,
+  },
+  mounted: function () {
+    animateNavbar();
   },
 };
 </script>
@@ -31,6 +35,7 @@ nav {
   height: 80px;
   width: 100%;
   border-bottom: 1px solid black;
+  z-index: 10;
 
   div {
     padding-left: 60px;

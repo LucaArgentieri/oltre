@@ -1,9 +1,9 @@
 <template>
   <footer>
     <div class="flex column">
-      <p class="title c-white">(oltre)</p>
+      <p class="title grandslang h1 c-white">(oltre)</p>
       <div class="info">
-        <p class="c-white">About</p>
+        <p class="c-white grandslang h3">About</p>
         <p class="light h5 c-white">
           La nostra missione è quella di creare una realtà all’interno del gioco
           in cui la donna abbia la libertà di parlare del proprio rapporto con
@@ -16,8 +16,8 @@
     </div>
     <div class="flex center column">
       <div>
-        <p class="c-white">Link rapidi</p>
-        <ul class="c-white lato">
+        <p class="c-white grandslang h3">Link rapidi</p>
+        <ul class="c-white lato light">
           <li>Home</li>
           <li>Shop</li>
           <li>Codice Sconto</li>
@@ -26,7 +26,7 @@
     </div>
     <div class="flex center column">
       <div>
-        <p class="c-white">Acquista (oltre) - il gioco</p>
+        <p class="c-white grandslang h4">Acquista (oltre) - il gioco</p>
       </div>
       <div>
         <Button name="acquista ora" />
@@ -105,9 +105,15 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    padding: 25px;
+
+    .info {
+      padding-right: 0px;
+    }
 
     div {
       padding-bottom: 50px;
+      padding-right: 0px;
     }
   }
 }

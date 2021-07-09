@@ -1,9 +1,9 @@
 <template>
   <div class="productblock flex center">
-    <div class="flex center">Image</div>
+    <div class="img flex center"></div>
 
-    <div class="flex column">
-      <p class="grandslang h1">(oltre) - Il gioco</p>
+    <div class="container flex column">
+      <p class="title grandslang h1">(oltre) - Il gioco</p>
       <p class="desc lato light italic h5 c-black">
         (oltre) - Intimità Condivisa <br />
         Gioco da tavolo + Sex Toy
@@ -40,6 +40,16 @@ export default {
 .productblock {
   height: 100vh;
 
+  .img {
+    background-image: url("../assets/images/GAME.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+    margin-left: 100px;
+  }
+
   div {
     width: 50%;
     padding: 120px;
@@ -66,7 +76,22 @@ export default {
 }
 @media (max-width: 900px) {
   .productblock {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
     flex-direction: column;
+
+    .img {
+      margin-left: 0px;
+    }
+
+    .title {
+      padding-bottom: 10px;
+    }
+
+    .container {
+      padding: 60px;
+    }
     div {
       width: 100%;
     }

@@ -1,7 +1,7 @@
 <template>
   <div class="hero flex center column">
     <div class="text">
-      <p class="grandslang h1">Intimità condivisa</p>
+      <h1 class="grandslang">Intimità condivisa</h1>
       <p class="lato light h4">
         Un gioco pensato per le donne, da giocare in compagnia delle amiche
         <br />
@@ -30,9 +30,14 @@ export default {
 <style lang="scss" scoped>
 .hero {
   height: 100vh;
-  background-image: url("../assets/images/BG_01-07.webp");
+  background-image: url("../assets/images/BANNER.gif");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
+  .button {
+    opacity: 0;
+  }
 
   h1 {
     padding-bottom: 25px;
@@ -49,7 +54,23 @@ export default {
     left: 0;
     width: 100%;
     height: 70px;
-    background: black;
+    background: #f4f4f4;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    .text {
+      h1 {
+        font-size: 42px;
+        text-align: center;
+      }
+
+      p {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
   }
 }
 </style>

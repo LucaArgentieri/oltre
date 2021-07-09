@@ -1,12 +1,12 @@
 <template>
   <div class="imagesgroup">
     <div class="imagesgroup-1">
-      <div>img1</div>
-      <div>img2</div>
+      <div></div>
+      <div></div>
     </div>
     <div class="imagesgroup-2">
-      <div>img1</div>
-      <div>img2</div>
+      <div></div>
+      <div></div>
     </div>
   </div>
 </template>
@@ -18,25 +18,42 @@ export default {};
 <style lang="scss">
 .imagesgroup {
   .imagesgroup-1 {
-    height: 450px;
+    height: 50vh;
     display: flex;
+
+    div {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
     div:nth-child(1) {
-      background-color: #ccb3ff;
+      background-image: url("../assets/images/BOX_01.png");
       width: 40%;
     }
     div:nth-child(2) {
+      background-image: url("../assets/images/CARDS_01.png");
+
       width: 60%;
     }
   }
 
   .imagesgroup-2 {
-    height: 550px;
+    div {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    height: 50vh;
     display: flex;
     div:nth-child(1) {
+      background-image: url("../assets/images/CARDS_02.png");
+
       width: 60%;
     }
     div:nth-child(2) {
-      background-color: #ccb3ff;
+      background-image: url("../assets/images/BOX_02.png");
+
       width: 40%;
     }
   }

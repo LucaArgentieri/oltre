@@ -47,16 +47,34 @@ export function reverseAccordion() {
   });
 }
 
-export function animateText() {
-  gsap.set(".hero .text", { perspective: 400 });
+export function animateNavbar() {
+  tl.add("start");
   gsap.from(
-    [".hero .text .h1"],
+    "nav div",
     {
       duration: 0.75,
       opacity: 0,
-      y: 100,
+      y: 20,
       stagger: 0.01,
+      ease: "power2.out",
     },
+    "start",
+    "+=0"
+  );
+}
+
+export function animateText() {
+  tl.add("start");
+  gsap.from(
+    [".hero .text h1"],
+    {
+      duration: 0.75,
+      opacity: 0,
+      y: 50,
+      stagger: 0.01,
+      ease: "power2.out",
+    },
+    "start",
     "+=0"
   );
   gsap.from(
@@ -64,12 +82,29 @@ export function animateText() {
     {
       duration: 0.75,
       opacity: 0,
-      y: 100,
+      y: 50,
       stagger: 0.01,
-      onComplete: () => {
-        gsap.to();
-      },
+      delay: 0.1,
+      ease: "power2.out",
     },
+    "start",
+    "+=0"
+  );
+
+  gsap.fromTo(
+    [".hero .button"],
+    {
+      y: 50,
+    },
+    {
+      duration: 0.75,
+      opacity: 1,
+      y: 0,
+      stagger: 0.01,
+      ease: "power2.out",
+      delay: 0.2,
+    },
+    "start",
     "+=0"
   );
 }

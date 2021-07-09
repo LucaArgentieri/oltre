@@ -117,13 +117,25 @@ $colors: (
   font-weight: 400;
 }
 
+.italic {
+  font-style: italic;
+}
+
 p {
   font-family: "Lato", sans-serif;
   font-weight: lighter;
+  font-size: 22px;
 }
 
-.italic {
-  font-style: italic;
+h1,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 85px;
+  font-weight: lighter;
+  font-family: "Grandslang";
 }
 
 .h1 {
@@ -156,5 +168,11 @@ p {
 }
 .h9 {
   font-size: 0.512rem;
+}
+
+@media (max-width: 900px) {
+  p {
+    font-size: 20px;
+  }
 }
 </style>
