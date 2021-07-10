@@ -1,18 +1,28 @@
 <template>
   <div class="imagesgroup">
-    <div class="imagesgroup-1">
-      <div></div>
-      <div></div>
-    </div>
+    <transition appear @enter="enter">
+      <div class="imagesgroup-1">
+        <div class="imagesgroup-1-1"></div>
+        <div class="imagesgroup-1-2"></div>
+      </div>
+    </transition>
+
     <div class="imagesgroup-2">
-      <div></div>
-      <div></div>
+      <div class="imagesgroup-2-1"></div>
+      <div class="imagesgroup-2-2"></div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { clipPathImg } from "../animations/animations";
+export default {
+  methods: {
+    enter() {
+      clipPathImg();
+    },
+  },
+};
 </script>
 
 <style lang="scss">

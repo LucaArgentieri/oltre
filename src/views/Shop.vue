@@ -178,6 +178,7 @@ export default {
   },
   methods: {
     changeShow() {
+      this.scrollTo(1);
       this.show = !this.show;
       if (this.show) {
         animateAccordion();
