@@ -17,7 +17,7 @@ import ImagesGroup from "../components/ImagesGroup.vue";
 import VideoBlock from "../components/VideoBlock.vue";
 import ProductBlock from "../components/ProductBlock.vue";
 import Reviews from "../components/Reviews.vue";
-import Footer from "../components/Foooter.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "Home",

@@ -8,7 +8,7 @@
       <router-link class="grandslang h2" to="/">(oltre)</router-link>
     </div>
     <div class="upcase flex center">
-      <Button name="Codice Sconto" link="codicesconto" />
+      <Button name="Codice Sconto" link="coupon" />
     </div>
   </nav>
 </template>

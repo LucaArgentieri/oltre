@@ -40,6 +40,8 @@
 
           <p class="more text-center">Altre recensioni</p>
         </div>
+        <label class="lato light italic" for="">Lascia un commento</label>
+        <input class="lato light h6" type="text" />
       </div>
     </div>
     <div class="desc">
@@ -110,7 +112,7 @@
 <script>
 import Navbar from "../components/Navbar.vue";
 import Button from "../components/Button.vue";
-import Footer from "../components/Foooter.vue";
+import Footer from "../components/Footer.vue";
 import {
   setAccordionContent,
   animateAccordion,
@@ -128,42 +130,42 @@ export default {
       show: false,
       images: [
         {
-          img: "https://images.unsplash.com/photo-1594729851651-46b17161f773?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+          img: require("../assets/images/GAME.png"),
         },
         {
-          img: "https://images.unsplash.com/photo-1594729851651-46b17161f773?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+          img: require("../assets/images/CARDS_03.png"),
         },
         {
-          img: "https://images.unsplash.com/photo-1594729851651-46b17161f773?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+          img: require("../assets/images/BOX_01.png"),
         },
         {
-          img: "https://images.unsplash.com/photo-1594729851651-46b17161f773?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+          img: require("../assets/images/CARDS_01.png"),
         },
         {
-          img: "https://images.unsplash.com/photo-1594729851651-46b17161f773?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+          img: require("../assets/images/CARDS_02.png"),
         },
       ],
       reviews: [
         {
-          img: "",
+          img: require("../assets/svg/reviews1.svg"),
           name: "Martina",
           eta: "23",
           desc: "Grazie a questo prodotto sono riuscita ad aprirmi con le mie amiche. Abbiamo passato una serata alternativa, ci siamo diveritite scoprendo nuovi aspetti di noi stesse. Consiglio ad ogni ragazza di provarlo",
         },
         {
-          img: "",
+          img: require("../assets/svg/reviews2.svg"),
           name: "Laura",
           eta: "27",
           desc: "Finalmente un gioco utile al benessere personale e soprattutto sessuale. Dopo un po’ di imbarazzo iniziale, poi ci siamo sciolte ed è stato molto divertente ascoltare le esperienze delle mie amiche. ",
         },
         {
-          img: "",
+          img: require("../assets/svg/reviews3.svg"),
           name: "Claudia",
           eta: "20",
           desc: "Il gioco è stato pensato molto bene. Ho scoperto molte cose che non sapevo e son riuscita a superare l’imbarazzo. Il fatto che nel gioco ci sia pure un sex toy mi piace molto, perchè non ne ho mai provato uno dato che costano molto",
         },
         {
-          img: "",
+          img: require("../assets/svg/reviews4.svg"),
           name: "Francesca",
           eta: "25",
           desc: "Lo adoro. Un gioco davvero utile per tutte le donne. Mi ha permesso di conoscermi meglio e di confrontarmi con le mie amiche. Il sex toy compreso con il gioco è fantastico, e tutte le mie amiche hanno un codice sconto per poterne comprare uno.",
@@ -190,11 +192,24 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .shop {
   padding: 140px 70px;
   display: grid;
   grid-template-columns: 8fr 4fr;
+
+  input {
+    margin-top: 15px;
+    height: 30px;
+    padding-left: 10px;
+    width: 100%;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 30px;
+  }
   .main {
     height: auto;
     display: flex;
@@ -203,7 +218,7 @@ export default {
       flex-direction: column;
       margin-right: 25px;
       cursor: pointer;
-      width: 10%;
+      width: 30%;
       img {
         margin-bottom: 25px;
         height: auto;
@@ -219,6 +234,10 @@ export default {
 
       .reviews {
         margin-bottom: 100px;
+
+        img {
+          padding-right: 15px;
+        }
         .title {
           padding-top: 25px;
           margin-top: 100px;

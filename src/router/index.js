@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import Shop from "../views/Shop.vue";
 import Purchase from "../views/Purchase.vue";
 import PurchaseCompleted from "../views/PurchaseCompleted.vue";
+import Coupon from "../views/Coupon.vue";
 import PageNotFound from "../views/PageNotFound.vue";
 
 const routes = [
@@ -25,6 +26,11 @@ const routes = [
     path: "/purchase-completed",
     name: "PurchaseCompleted",
     component: PurchaseCompleted,
+  },
+  {
+    path: "/coupon",
+    name: "Coupon",
+    component: Coupon,
   },
   {
     path: "/:pathMatch(.*)*",

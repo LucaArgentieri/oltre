@@ -8,6 +8,7 @@
         dove l’unica vera regola è non aver paura di raccontarsi.
       </p>
     </div>
+
     <Button name="acquista ora" link="shop" />
 
     <div class="black_div"></div>
@@ -21,6 +22,7 @@ export default {
   components: {
     Button,
   },
+
   mounted: function () {
     animateText();
   },
