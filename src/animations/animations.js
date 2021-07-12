@@ -15,6 +15,10 @@ export function scrollTo(index) {
   });
 }
 
+export function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
 export function animateNavbar() {
   tl.add("start");
   gsap.from(
@@ -29,6 +33,7 @@ export function animateNavbar() {
     "start",
     "+=0"
   );
+  console.log("ciao");
 }
 
 export function animateHeroText() {
@@ -154,7 +159,6 @@ export function clipPathImg() {
       opacity: 1,
       clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
       scrollTrigger: {
-        start: () => "top 50%",
         trigger: ".imagesgroup",
       },
     }
@@ -171,7 +175,6 @@ export function clipPathImg() {
       opacity: 1,
       clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
       scrollTrigger: {
-        start: () => "top 50%",
         trigger: ".imagesgroup",
       },
     }
@@ -188,7 +191,6 @@ export function clipPathImg() {
       opacity: 1,
       clipPath: "polygon(0% 0%,100% 0%,100% 100%,0% 100%)",
       scrollTrigger: {
-        start: () => "top 50%",
         trigger: ".imagesgroup",
       },
     }
@@ -205,7 +207,6 @@ export function clipPathImg() {
       opacity: 1,
       clipPath: "polygon(0% 0%,100% 0%,100% 100%,0% 100%)",
       scrollTrigger: {
-        start: () => "top 50%",
         trigger: ".imagesgroup",
       },
     }

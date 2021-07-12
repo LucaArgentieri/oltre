@@ -3,25 +3,7 @@
 </template>
 
 <script>
-export default {
-  metaInfo: {
-    title: "Oltre",
-    titleTemplate: "Oltre",
-    htmlAttrs: {
-      lang: "it",
-      amp: true,
-    },
-    meta: [
-      { charset: "utf-8" },
-      {
-        name: "description",
-        content:
-          "Un gioco pensato per le donne, da giocare in compagnia delle amiche dove l’unica vera regola è non aver paura di raccontarsi.",
-      },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-    ],
-  },
-};
+export default {};
 </script>
 
 <style lang="scss">

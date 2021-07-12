@@ -1,12 +1,21 @@
 <template>
-  <router-link :to="'/' + link" class="button upcase lato light">{{
-    name
-  }}</router-link>
+  <router-link
+    @click="scrollToTopFunction"
+    :to="'/' + link"
+    class="button upcase lato light"
+    >{{ name }}</router-link
+  >
 </template>
 
 <script>
+import { scrollToTop } from "../animations/animations";
 export default {
   props: ["name", "link"],
+  methods: {
+    scrollToTopFunction() {
+      scrollToTop();
+    },
+  },
 };
 </script>
 

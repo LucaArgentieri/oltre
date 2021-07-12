@@ -18,9 +18,19 @@
       <div>
         <p class="c-white grandslang h3">Link rapidi</p>
         <ul class="c-white lato light">
-          <li>Home</li>
-          <li>Shop</li>
-          <li>Codice Sconto</li>
+          <li>
+            <router-link @click="scrollToTopFunction" to="/">Home</router-link>
+          </li>
+          <li>
+            <router-link @click="scrollToTopFunction" to="/shop"
+              >Shop</router-link
+            >
+          </li>
+          <li>
+            <router-link @click="scrollToTopFunction" to="/coupon"
+              >Codice Sconto</router-link
+            >
+          </li>
         </ul>
       </div>
     </div>
@@ -83,9 +93,15 @@
 
 <script>
 import Button from "./Button.vue";
+import { scrollToTop } from "../animations/animations";
 export default {
   components: {
     Button,
+  },
+  methods: {
+    scrollToTopFunction() {
+      scrollToTop();
+    },
   },
 };
 </script>

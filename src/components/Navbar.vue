@@ -1,11 +1,20 @@
 <template>
   <nav>
     <div class="nav_1">
-      <router-link to="/" class="upcase lato light">home</router-link>
-      <router-link to="/shop" class="upcase lato light">shop</router-link>
+      <router-link @click="scrollToTopFunction" to="/" class="upcase lato light"
+        >home</router-link
+      >
+      <router-link
+        @click="scrollToTopFunction"
+        to="/shop"
+        class="upcase lato light"
+        >shop</router-link
+      >
     </div>
     <div>
-      <router-link class="grandslang h2" to="/">(oltre)</router-link>
+      <router-link @click="scrollToTopFunction" class="grandslang h2" to="/"
+        >(oltre)</router-link
+      >
     </div>
     <div class="upcase flex center">
       <Button name="Codice Sconto" link="coupon" />
@@ -15,13 +24,18 @@
 
 <script>
 import Button from "../components/Button.vue";
-import { animateNavbar } from "../animations/animations";
+import { animateNavbar, scrollToTop } from "../animations/animations";
 export default {
   components: {
     Button,
   },
   mounted: function () {
     animateNavbar();
+  },
+  methods: {
+    scrollToTopFunction() {
+      scrollToTop();
+    },
   },
 };
 </script>

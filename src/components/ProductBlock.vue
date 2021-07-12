@@ -22,7 +22,7 @@
         <p class="h6">47.90€</p>
       </span>
 
-      <Button name="Acquista ora" />
+      <Button name="Acquista ora" link="shop" />
     </div>
   </div>
 </template>
