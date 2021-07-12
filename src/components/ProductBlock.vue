@@ -41,7 +41,7 @@ export default {
   height: 100vh;
 
   .img {
-    background-image: url("../assets/images/GAME.png");
+    background-image: url("../assets/images/GAME.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

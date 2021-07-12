@@ -130,19 +130,19 @@ export default {
       show: false,
       images: [
         {
-          img: require("../assets/images/GAME.png"),
+          img: require("../assets/images/GAME.webp"),
         },
         {
-          img: require("../assets/images/CARDS_03.png"),
+          img: require("../assets/images/CARDS_03.webp"),
         },
         {
-          img: require("../assets/images/BOX_01.png"),
+          img: require("../assets/images/BOX_01.webp"),
         },
         {
-          img: require("../assets/images/CARDS_01.png"),
+          img: require("../assets/images/CARDS_01.webp"),
         },
         {
-          img: require("../assets/images/CARDS_02.png"),
+          img: require("../assets/images/CARDS_02.webp"),
         },
       ],
       reviews: [

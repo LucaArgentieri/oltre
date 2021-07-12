@@ -20,7 +20,7 @@
 
     <div class="svg_container flex center">
       <img src="../assets/svg/mainText2.svg" alt="" />
-      <img class="image" src="../assets/images/mainTextImg.png" alt="" />
+      <img class="image" src="../assets/images/mainTextImg.webp" alt="" />
     </div>
   </div>
 </template>

@@ -21,7 +21,7 @@ export default {};
 <style lang="scss" scoped>
 .video {
   height: 100vh;
-  background-image: url("../assets/images/VIDEO.jpg");
+  background-image: url("../assets/images/VIDEO.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

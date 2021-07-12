@@ -38,11 +38,11 @@ export default {
     }
 
     div:nth-child(1) {
-      background-image: url("../assets/images/BOX_01.png");
+      background-image: url("../assets/images/BOX_01.webp");
       width: 40%;
     }
     div:nth-child(2) {
-      background-image: url("../assets/images/CARDS_01.png");
+      background-image: url("../assets/images/CARDS_01.webp");
 
       width: 60%;
     }
@@ -57,12 +57,12 @@ export default {
     height: 50vh;
     display: flex;
     div:nth-child(1) {
-      background-image: url("../assets/images/CARDS_02.png");
+      background-image: url("../assets/images/CARDS_02.webp");
 
       width: 60%;
     }
     div:nth-child(2) {
-      background-image: url("../assets/images/BOX_02.png");
+      background-image: url("../assets/images/BOX_02.webp");
 
       width: 40%;
     }

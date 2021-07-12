@@ -86,13 +86,13 @@ export default {
       show: false,
       images: [
         {
-          img: require("../assets/images/coupon.png"),
+          img: require("../assets/images/coupon.webp"),
         },
         {
-          img: require("../assets/images/coupon2.png"),
+          img: require("../assets/images/coupon2.webp"),
         },
         {
-          img: require("../assets/images/coupon3.png"),
+          img: require("../assets/images/coupon3.webp"),
         },
       ],
       reviews: [
