@@ -1,42 +1,34 @@
 <template>
   <div class="hero flex center column">
-    <transition appear @enter="enter">
-      <span class="flex center column">
-        <div class="text">
-          <h1 class="title grandslang">Intimità condivisa</h1>
+    <span class="flex center column">
+      <div class="text">
+        <h1 class="title grandslang">Intimità condivisa</h1>
 
-          <p class="lato light h4">
-            Un gioco pensato per le donne, da giocare in compagnia delle amiche
-            <br />
-            dove l’unica vera regola è non aver paura di raccontarsi.
-          </p>
-        </div>
+        <p class="lato light h4">
+          Un gioco pensato per le donne, da giocare in compagnia delle amiche
+          <br />
+          dove l’unica vera regola è non aver paura di raccontarsi.
+        </p>
+      </div>
 
-        <Button name="acquista ora" link="shop" />
-      </span>
-    </transition>
+      <Button name="acquista ora" link="shop" />
+    </span>
     <div class="black_div"></div>
   </div>
 </template>
 
 <script>
 import Button from "../components/Button.vue";
-import { animateHeroText } from "../animations/animations";
 export default {
   components: {
     Button,
-  },
-
-  methods: {
-    enter() {
-      animateHeroText();
-    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .hero {
+  position: relative;
   height: 100vh;
   background-image: url("../assets/images/BANNER.gif");
   background-position: center;

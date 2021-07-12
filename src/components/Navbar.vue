@@ -24,18 +24,20 @@
 
 <script>
 import Button from "../components/Button.vue";
-import { animateNavbar, scrollToTop } from "../animations/animations";
+import { scrollToTop, animateNavbar } from "../animations/animations";
+
 export default {
   components: {
     Button,
   },
-  mounted: function () {
-    animateNavbar();
-  },
+
   methods: {
     scrollToTopFunction() {
       scrollToTop();
     },
+  },
+  mounted() {
+    animateNavbar();
   },
 };
 </script>

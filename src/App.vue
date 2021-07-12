@@ -3,7 +3,13 @@
 </template>
 
 <script>
-export default {};
+import { gsap } from "gsap";
+const tl = gsap.timeline();
+export default {
+  beforeUnmount() {
+    tl.kill();
+  },
+};
 </script>
 
 <style lang="scss">
@@ -185,5 +191,10 @@ h6 {
 //Scrollbar
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+::selection {
+  background: black;
+  color: #f4f4f4;
 }
 </style>

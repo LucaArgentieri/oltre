@@ -1,12 +1,14 @@
 <template>
-  <Navbar />
-  <Hero />
-  <MainText />
-  <ImagesGroup />
-  <VideoBlock />
-  <ProductBlock />
-  <Reviews />
-  <Footer />
+  <div>
+    <Navbar />
+    <Hero />
+    <MainText />
+    <ImagesGroup />
+    <VideoBlock />
+    <ProductBlock />
+    <Reviews />
+    <Footer />
+  </div>
 </template>
 
 <script>
@@ -18,9 +20,10 @@ import VideoBlock from "../components/VideoBlock.vue";
 import ProductBlock from "../components/ProductBlock.vue";
 import Reviews from "../components/Reviews.vue";
 import Footer from "../components/Footer.vue";
-
+import { animateHeroText } from "../animations/animations";
 export default {
   name: "Home",
+
   components: {
     Navbar,
     Hero,
@@ -30,6 +33,9 @@ export default {
     ProductBlock,
     Reviews,
     Footer,
+  },
+  mounted() {
+    animateHeroText();
   },
 };
 </script>

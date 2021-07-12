@@ -47,7 +47,7 @@
     <div class="desc">
       <div class="info">
         <p class="title grandslang h1">(oltre) - Intimità condivisa</p>
-        <p class="lato light h5 c-black">
+        <p class="text lato light h5 c-black">
           Oltre è un gioco innovativo che ha il fine di permettere alle donne di
           essere loro stesse e condividere i loro pensieri ed esperienze
           inerenti alla sessualità. <br />
@@ -118,6 +118,8 @@ import {
   animateAccordion,
   reverseAccordion,
   scrollTo,
+  imageStagger,
+  animateShopText,
 } from "../animations/animations";
 export default {
   components: {
@@ -173,9 +175,6 @@ export default {
       ],
     };
   },
-  mounted: function () {
-    setAccordionContent();
-  },
   methods: {
     changeShow() {
       this.scrollTo(1);
@@ -189,6 +188,11 @@ export default {
     scrollTo(index) {
       scrollTo(index);
     },
+  },
+  mounted() {
+    imageStagger();
+    animateShopText();
+    setAccordionContent();
   },
 };
 </script>

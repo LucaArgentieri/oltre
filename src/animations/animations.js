@@ -20,51 +20,48 @@ export function scrollToTop() {
 }
 
 export function animateNavbar() {
-  tl.add("start");
-  gsap.from(
+  tl.add("navbar");
+  tl.from(
     "nav div",
     {
-      duration: 0.75,
       opacity: 0,
       y: 20,
+      duration: 0.5,
       stagger: 0.01,
       ease: "power2.out",
     },
-    "start",
-    "+=0"
+    "navbar"
   );
-  console.log("ciao");
 }
 
 export function animateHeroText() {
   tl.add("start");
-  gsap.from(
+
+  tl.from(
     [".hero .text .title"],
     {
       duration: 0.75,
       opacity: 0,
       y: 50,
-      stagger: 0.01,
       ease: "power2.out",
     },
     "start",
-    "+=0"
+    "+=10"
   );
-  gsap.from(
+  tl.from(
     [".hero .text .h4"],
     {
       duration: 0.75,
       opacity: 0,
       y: 50,
-      stagger: 0.01,
       delay: 0.1,
       ease: "power2.out",
     },
     "start",
-    "+=0"
+    "+=10"
   );
 
-  gsap.fromTo(
+  tl.fromTo(
     [".hero .button"],
     {
       y: 50,
@@ -73,12 +70,11 @@ export function animateHeroText() {
       duration: 0.75,
       opacity: 1,
       y: 0,
-      stagger: 0.01,
       ease: "power2.out",
       delay: 0.2,
     },
     "start",
-    "+=0"
+    "+=10"
   );
 }
 
@@ -210,6 +206,98 @@ export function clipPathImg() {
         trigger: ".imagesgroup",
       },
     }
+  );
+}
+
+export function animateShopText() {
+  tl.add("shop");
+  tl.from(
+    [".shop .desc .title"],
+    {
+      duration: 0.75,
+      opacity: 0,
+      y: 50,
+      stagger: 0.01,
+      ease: "power2.out",
+      delay: 0.1,
+      scrollTrigger: {
+        start: () => "top 50%",
+        trigger: ".maintext",
+      },
+    },
+    "shop",
+    "+=0"
+  );
+  tl.from(
+    [".shop .desc .text"],
+    {
+      duration: 0.75,
+      opacity: 0,
+      y: 50,
+      stagger: 0.01,
+      ease: "power2.out",
+      delay: 0.2,
+      scrollTrigger: {
+        start: () => "top 50%",
+        trigger: ".maintext",
+      },
+    },
+    "shop",
+    "+=0"
+  );
+  tl.from(
+    [
+      ".shop .desc .price",
+      ".shop .desc .dots",
+      ".shop .button",
+      ".shop .accordion",
+      ".shop .reviews",
+      ".shop .input",
+    ],
+    {
+      duration: 0.75,
+      opacity: 0,
+      y: 50,
+      stagger: 0.01,
+      ease: "power2.out",
+      delay: 0.3,
+      scrollTrigger: {
+        start: () => "top 50%",
+        trigger: ".maintext",
+      },
+    },
+    "shop",
+    "+=0"
+  );
+}
+
+export function imageStagger() {
+  tl.add("img");
+  tl.fromTo(
+    [".shop .main .mini-img img"],
+    {
+      opacity: 0,
+    },
+    {
+      opacity: 1,
+      duration: 0.5,
+      ease: "power1.inOut",
+      stagger: 0.1,
+    },
+    "img"
+  );
+  tl.fromTo(
+    [".shop .main .full-img img"],
+    {
+      opacity: 0,
+    },
+    {
+      opacity: 1,
+      duration: 0.5,
+      ease: "power1.inOut",
+      stagger: 0.1,
+    },
+    "img"
   );
 }
 
