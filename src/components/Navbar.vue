@@ -38,7 +38,6 @@ export default {
     Button,
     NavbarMobile,
   },
-
   methods: {
     scrollToTopFunction() {
       scrollToTop();

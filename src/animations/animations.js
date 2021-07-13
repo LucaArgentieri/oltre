@@ -34,6 +34,34 @@ export function animateNavbar() {
   );
 }
 
+export function animateMobileMenu(status) {
+  tl.add("navbarMobile");
+
+  if (status) {
+    gsap.fromTo(
+      ".nav_menu_open",
+      {
+        y: 100,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+      }
+    );
+  } else {
+    gsap.to(".nav_menu_open", {
+      y: "-100vh",
+      duration: 0.5,
+      onComplete: () => {
+        gsap.to(".nav_menu_open", {
+          opacity: 0,
+        });
+      },
+    });
+  }
+}
+
 export function animateHeroText() {
   tl.add("start");
 
