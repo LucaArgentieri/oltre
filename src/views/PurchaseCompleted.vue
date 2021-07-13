@@ -1,5 +1,4 @@
 <template>
-  <Navbar />
   <div class="flex center column">
     <h1 class="grandslang">Grazie per l'acquisto</h1>
     <p class="lato h5 text-center">
@@ -10,12 +9,7 @@
 </template>
 
 <script>
-import Navbar from "../components/Navbar.vue";
-export default {
-  components: {
-    Navbar,
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>

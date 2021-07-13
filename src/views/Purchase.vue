@@ -1,5 +1,4 @@
 <template>
-  <Navbar />
   <div class="purchase flex center column">
     <form action="">
       <div class="paypal flex center column">
@@ -92,11 +91,9 @@
 </template>
 
 <script>
-import Navbar from "../components/Navbar.vue";
 import Button from "../components/Button.vue";
 export default {
   components: {
-    Navbar,
     Button,
   },
 };

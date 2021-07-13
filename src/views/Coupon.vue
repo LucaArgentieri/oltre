@@ -1,5 +1,4 @@
 <template>
-  <Navbar />
   <div class="shop">
     <div class="main">
       <div class="mini-img">
@@ -70,7 +69,6 @@
 </template>
 
 <script>
-import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import {
   scrollTo,
@@ -79,7 +77,6 @@ import {
 } from "../animations/animations";
 export default {
   components: {
-    Navbar,
     Footer,
   },
   data() {
@@ -130,9 +127,15 @@ export default {
       scrollTo(index);
     },
   },
+
   mounted() {
-    imageStagger();
-    animateShopText();
+    if (window.innerWidth > 900) {
+      imageStagger();
+      animateShopText();
+    } else {
+      animateShopText();
+      imageStagger();
+    }
   },
 };
 </script>

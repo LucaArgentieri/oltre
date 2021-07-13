@@ -1,5 +1,4 @@
 <template>
-  <Navbar />
   <div class="shop">
     <div class="main">
       <div class="mini-img">
@@ -266,7 +265,6 @@
 </template>
 
 <script>
-import Navbar from "../components/Navbar.vue";
 import Button from "../components/Button.vue";
 import Footer from "../components/Footer.vue";
 import {
@@ -279,7 +277,6 @@ import {
 } from "../animations/animations";
 export default {
   components: {
-    Navbar,
     Button,
     Footer,
   },
@@ -342,12 +339,19 @@ export default {
       }
     },
     scrollTo(index) {
-      scrollTo(index);
+      if (window.innerWidth > 900) {
+        scrollTo(index);
+      }
     },
   },
   mounted() {
-    imageStagger();
-    animateShopText();
+    if (window.innerWidth > 900) {
+      imageStagger();
+      animateShopText();
+    } else {
+      animateShopText();
+      imageStagger();
+    }
     setAccordionContent();
   },
 };
@@ -437,6 +441,7 @@ export default {
       .dots {
         padding-top: 50px;
         padding-bottom: 50px;
+        text-align: center;
       }
 
       a {
@@ -475,6 +480,43 @@ export default {
           content: "• ";
           color: black;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .shop {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 35px;
+
+    .desc {
+      margin: 0px;
+
+      .info {
+        margin-right: 0px;
+      }
+    }
+
+    .accordion {
+      &_content {
+        padding-bottom: 50px;
+
+        p {
+          padding-top: 0px;
+        }
+      }
+      .details {
+        margin-bottom: 50px;
+      }
+    }
+
+    .main {
+      .mini-img {
+        display: none;
       }
     }
   }

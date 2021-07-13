@@ -1,34 +1,42 @@
 <template>
-  <nav>
-    <div class="nav_1">
-      <router-link @click="scrollToTopFunction" to="/" class="upcase lato light"
-        >home</router-link
-      >
-      <router-link
-        @click="scrollToTopFunction"
-        to="/shop"
-        class="upcase lato light"
-        >shop</router-link
-      >
-    </div>
-    <div>
-      <router-link @click="scrollToTopFunction" class="grandslang h2" to="/"
-        >(oltre)</router-link
-      >
-    </div>
-    <div class="upcase flex center">
-      <Button name="Codice Sconto" link="coupon" />
-    </div>
-  </nav>
+  <div>
+    <nav>
+      <div class="nav_1">
+        <router-link
+          @click="scrollToTopFunction"
+          to="/"
+          class="upcase lato light"
+          >home</router-link
+        >
+        <router-link
+          @click="scrollToTopFunction"
+          to="/shop"
+          class="upcase lato light"
+          >shop</router-link
+        >
+      </div>
+      <div>
+        <router-link @click="scrollToTopFunction" class="grandslang h2" to="/"
+          >(oltre)</router-link
+        >
+      </div>
+      <div class="upcase flex center">
+        <Button name="Codice Sconto" link="coupon" />
+      </div>
+    </nav>
+    <NavbarMobile />
+  </div>
 </template>
 
 <script>
+import NavbarMobile from "./NavbarMobile.vue";
 import Button from "../components/Button.vue";
 import { scrollToTop, animateNavbar } from "../animations/animations";
 
 export default {
   components: {
     Button,
+    NavbarMobile,
   },
 
   methods: {

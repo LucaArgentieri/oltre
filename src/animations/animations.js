@@ -328,7 +328,7 @@ export function reverseAccordion() {
   });
   tl.to(".accordion_content", {
     autoAlpha: 0,
-    height: "auto",
+    height: 0,
     duration: 0.3,
   });
 }

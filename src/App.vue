@@ -1,11 +1,19 @@
 <template>
-  <router-view />
+  <div>
+    <Navbar />
+    <router-view />
+  </div>
 </template>
 
+
 <script>
+import Navbar from "./components/Navbar.vue";
 import { gsap } from "gsap";
 const tl = gsap.timeline();
 export default {
+  components: {
+    Navbar,
+  },
   beforeUnmount() {
     tl.kill();
   },

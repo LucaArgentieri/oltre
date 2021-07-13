@@ -90,7 +90,7 @@ export default {
     }
 
     .container {
-      padding: 60px;
+      padding: 35px;
     }
     div {
       width: 100%;
