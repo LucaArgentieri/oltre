@@ -1,0 +1,33 @@
+{
+  "name": "Oltre",
+  "short_name": "Oltre",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f4f4f4",
+  "background_color": "#f4f4f4",
+  "description": "Un gioco pensato per le donne, da giocare in compagnia delle amiche dove l’unica vera regola è non aver paura di raccontarsi.",
+  "icons": [
+    {
+      "src": "img/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/android-chrome-maskable-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/android-chrome-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
