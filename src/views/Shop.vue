@@ -27,12 +27,12 @@
                 <img :src="item.img" alt="Loading..." />
               </div>
               <div>
-                <p>{{ item.name }}</p>
-                <p>Età {{ item.eta }}</p>
+                <p class="lato medium">{{ item.name }}</p>
+                <p class="h6">Età {{ item.eta }}</p>
               </div>
             </div>
 
-            <p class="desc">
+            <p class="desc h5">
               {{ item.desc }}
             </p>
           </div>
@@ -45,7 +45,7 @@
     </div>
     <div class="desc">
       <div class="info">
-        <p class="title grandslang h1">(oltre) - Intimità condivisa</p>
+        <p class="title grandslang h2">(oltre) - Intimità condivisa</p>
         <p class="text lato light h5 c-black">
           Oltre è un gioco innovativo che ha il fine di permettere alle donne di
           essere loro stesse e condividere i loro pensieri ed esperienze

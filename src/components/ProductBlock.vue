@@ -65,10 +65,10 @@ export default {
     .price {
       align-items: center;
       padding-top: 25px;
-      padding-bottom: 25px;
+      padding-bottom: 125px;
       p:nth-child(2) {
         padding-left: 25px;
-        color: red;
+        color: #eb6b45;
         text-decoration: line-through;
       }
     }

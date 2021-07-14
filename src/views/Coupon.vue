@@ -27,12 +27,12 @@
                 <img :src="item.img" alt="Loading..." />
               </div>
               <div>
-                <p>{{ item.name }}</p>
-                <p>Età {{ item.eta }}</p>
+                <p class="lato medium">{{ item.name }}</p>
+                <p class="h6">Età {{ item.eta }}</p>
               </div>
             </div>
 
-            <p class="desc">
+            <p class="desc h5">
               {{ item.desc }}
             </p>
           </div>
@@ -45,7 +45,7 @@
     </div>
     <div class="desc">
       <div class="info">
-        <p class="title grandslang h1">Microscopic Mini G Vibrator Pink</p>
+        <p class="title grandslang h2">Microscopic Mini G Vibrator Pink</p>
         <p class="text lato light h5 c-black">
           Un modello chic e impermeabile per alleviare ogni tipo di stress.
           Totalmente discreto, il Microscopic Mini G Vibrator offre la qualità
@@ -60,8 +60,10 @@
       </div>
 
       <div class="input">
-        <label class="lato light italic" for="">Lascia un commento</label>
-        <input class="lato light h6" type="text" />
+        <label class="lato light italic" for=""
+          >Inserisci il codice sconto</label
+        >
+        <input class="lato light h5" type="text" />
       </div>
     </div>
   </div>

@@ -84,7 +84,8 @@ export default {};
 
 <style lang="scss" scoped>
 .reviews {
-  height: 100vh;
+  height: auto;
+  margin-bottom: 300px;
 
   svg {
     margin-bottom: 25px;

@@ -14,9 +14,11 @@
             del gioco è far capire a donne di tutte le età che non c’è nulla di
             sbagliato nel parlare di ciò che ci da piacere, anzi, è fondamentale
             per conoscerci più a fondo e sentirci libere senza paure e
-            pregiudizi. Attraverso delle carte e delle azioni ad esse associate,
-            passa una serata in cui la vera pratagonista sei tu e la tua
-            intimità.
+            pregiudizi.
+          </p>
+          <p class="desc lato light h5">
+            Attraverso delle carte e delle azioni ad esse associate, passa una
+            serata in cui la vera pratagonista sei tu e la tua intimità.
           </p>
         </div>
       </transition>

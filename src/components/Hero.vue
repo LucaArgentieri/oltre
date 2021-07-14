@@ -5,7 +5,7 @@
       <div class="text">
         <h1 class="title grandslang">Intimità condivisa</h1>
 
-        <p class="lato light h4">
+        <p class="lato light h5">
           Un gioco pensato per le donne, da giocare in compagnia delle amiche
           <br />
           dove l’unica vera regola è non aver paura di raccontarsi.
