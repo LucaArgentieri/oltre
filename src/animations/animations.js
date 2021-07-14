@@ -42,20 +42,24 @@ export function animateMobileMenu(status) {
       ".nav_menu_open",
       {
         y: 100,
+        pointerEvents: "none",
       },
       {
         y: 0,
         opacity: 1,
         duration: 0.5,
+        pointerEvents: "all",
       }
     );
   } else {
     gsap.to(".nav_menu_open", {
       y: "-100vh",
       duration: 0.5,
+
       onComplete: () => {
         gsap.to(".nav_menu_open", {
           opacity: 0,
+          pointerEvents: "none",
         });
       },
     });

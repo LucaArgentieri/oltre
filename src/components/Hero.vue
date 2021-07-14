@@ -1,6 +1,7 @@
 <template>
-  <div class="hero flex center column">
-    <span class="flex center column">
+  <div class="hero">
+    <div class="hero_bg flex center column"></div>
+    <span class="hero_text flex center column">
       <div class="text">
         <h1 class="title grandslang">Intimità condivisa</h1>
 
@@ -28,12 +29,34 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-  position: relative;
   height: 100vh;
-  background-image: url("../assets/images/BANNER.gif");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+
+  &_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../assets/images/BANNER.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(3.5px);
+  }
+
+  &_text {
+    height: 100vh;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    .text {
+      z-index: 998;
+    }
+  }
 
   .button {
     opacity: 0;

@@ -44,6 +44,7 @@ export default {
       open: false,
     };
   },
+
   methods: {
     animateMobileMenuFunction() {
       this.open = !this.open;
@@ -94,6 +95,7 @@ export default {
     width: 100vw;
     background: #f4f4f4;
     z-index: 8;
+    pointer-events: none;
 
     a {
       margin-bottom: 25px;
