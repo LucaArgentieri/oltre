@@ -1,5 +1,7 @@
 <template>
-  <h1>Error dude</h1>
+  <div class="flex center" style="height: 100vh">
+    <h1>Error dude</h1>
+  </div>
 </template>
 
 <script>

@@ -42,7 +42,7 @@
         </p>
       </div>
       <div>
-        <Button name="acquista ora" />
+        <Button name="acquista ora" link="shop" />
       </div>
     </div>
     <div class="flex center column">
