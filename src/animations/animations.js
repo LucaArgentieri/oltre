@@ -81,7 +81,7 @@ export function animateHeroText() {
     "+=10"
   );
   tl.from(
-    [".hero .text .h4"],
+    [".hero .text p"],
     {
       duration: 0.75,
       opacity: 0,
